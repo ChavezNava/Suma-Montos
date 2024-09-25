@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SUMA MONTOS</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="flex-container">
+
+    <script>
+      let meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+      let diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+      let f = new Date();
+      document.write(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+    </script>
+       <div id="reloj"></div>
+
+
+    <div class="encabezado">
+      <label>EFECTIVO EN CAJA</label>
+    </div>
+
+    <div class="horario">
+      <label>Entrada:</label>
+      <input class="imput" name="cbiHorario" type="radio" value="entrada" checked />
+
+      <label>Salida:</label>
+      <input clas="imput" name="cbiHorario" type="radio" value="salida" />
+    </div>
+
+    <div class="caja">
+      <label>Monto de $0.50:</label>
+      <input class="imput" autofocus type="number" id="valor1" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $1.00:</label>
+      <input class="imput" autofocus type="number" id="valor2" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $2.00:</label>
+      <input class="imput" autofocus type="number" id="valor3" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $5.00:</label>
+      <input class="imput" autofocus type="number" id="valor4" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $10.0:</label>
+      <input class="imput" autofocus type="number" id="valor5" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $20.0:</label>
+      <input class="imput" autofocus type="number" id="valor6" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $50.0:</label>
+      <input class="imput" autofocus type="number" id="valor7" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $100 :</label>
+      <input class="imput" autofocus type="number" id="valor8" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $200 :</label>
+      <input class="imput" autofocus type="number" id="valor9" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto de $500 :</label>
+      <input class="imput" autofocus type="number" id="valor10" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <label>Monto $1000.0 :</label>
+      <input class="imput" autofocus type="number" id="valor11" placeholder="0.00">
+    </div>
+
+    <div class="caja">
+      <input class="boton" type="button" id="boton" name="operacion" value="Sumar Montos" onclick="operacion()">
+    </div>
+
+    <div class="caja">
+      <label>Resultado:</label>
+      <input class="imputR" type=»text» disabled=»disabled» id="result1">
+    </div>
+
+    <textarea cols="29" rows="8" id="mensaje" class="textarea" required placeholder="Ingrese observaciones"></textarea>
+
+    <!-- Project -->
+
+
+  </section>
+
+</body>
+
+</html>
